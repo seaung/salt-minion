@@ -6,7 +6,6 @@ if [ -n "$MINION_ID" ]; then
 fi
 
 if [ -n "$SALT_MASTER" ]; then
-	#sed -i '/^master/d' /etc/salt/minion
 	echo "master: $SALT_MASTER" >> /etc/salt/minion
 fi
 
